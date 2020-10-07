@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+body {
+    background: #262626;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.center {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-65%, -60%);
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.589);
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.SkillsBox {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.SkillsBox p {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: bold;
+}
+
+.SkillsBox p:nth-child(2) {
+    float: right;
+    position: relative;
+    top: -25px;
+}
+
+.skills {
+    background: #042331;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #0fffb7;
+    border-radius: 20px;
+}
+
+.Skills-level {
+    background: #0fffb7;
+    width: 100%;
+    height: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    transition: all .5s ease;
+}
+
+.ButtonOUT {
+    text-align: right;
+    font-size: 55px;
+}
+
+.submit {
+    font-size: 25px;
+    margin-right: 5rem;
+    background-color: none;
+    border: 3px solid blueviolet;
+    color: black;
+    width: 12%;
+    cursor: pointer;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #063146;
+    user-select: none;
+}
+
+.profile_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .profile_info .profile_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar .profile_info h4 {
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    transition: .4s;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    background: #042331;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+#check:checked~label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked~label #cancel {
+    left: 195px;
+}
+
+#check:checked~section {
+    margin-left: 250px;
+}
+
+section {
+    background: url(abstract.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    transition: all .5s;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 500px;
+    padding-right: 500px;
+    height: 1300px;
+    text-align: center;
+}
+
+.icons a {
+    padding: 0.4rem;
+}
+
+.icons a:hover {
+    color: white;
+    transition: all 0.5s ease-out;
+}
+
+.footer {
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 15px 0;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.219);
+}
+
+.inner_footer {
+    display: block;
+    margin: 0 auto;
+    width: 1100;
+    height: 0%;
+}
+
+.inner_footer .icons {
+    width: 60px;
+    height: 0%;
+}
